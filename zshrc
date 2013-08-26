@@ -27,7 +27,7 @@ ZSH_THEME="agnoster-chars"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want to disable command autocorrection
-# DISABLE_CORRECTION="true"
+DISABLE_CORRECTION="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 # COMPLETION_WAITING_DOTS="true"
@@ -61,6 +61,4 @@ PATH=$PATH:$HOME/.rvm/bin:$HOME/.redis/src
 # Customize to your needs...
 export PATH=$PATH:/Users/jordan/.rvm/gems/ruby-1.9.3-p429/bin:/Users/jordan/.rvm/gems/ruby-1.9.3-p429@global/bin:/Users/jordan/.rvm/rubies/ruby-1.9.3-p429/bin:/Users/jordan/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/X11/bin:/Users/jordan/.redis/src
 export PATH=$PATH:/usr/local/sbin
-
-unsetopt correct_all
-setopt correct
+unsetopt correct
