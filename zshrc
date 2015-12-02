@@ -65,4 +65,6 @@ unsetopt correct
 # OPAM configuration
 . ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
+export LESS=-RI
+
 PATH=$HOME/.rvm/bin:$HOME/.redis/src:$PATH
