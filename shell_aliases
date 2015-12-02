@@ -16,7 +16,11 @@ alias fgrep="find . | grep -i"
 alias fgrepnf="find . | grep *.* | grep -i"
 alias sanitize="sed -e 's/\\ /\\\ /g'"
 alias openall="sanitize | xargs open"
-alias save="pbpaste >"
 alias lim="head -n"
 alias gln="git ll | head -n"
 alias hours="vim ~/.tmp/hours"
+
+function save() {
+  pbpaste
+  pbpaste > $1
+}
