@@ -25,3 +25,4 @@ function save() {
   pbpaste > $1
 }
 
+alias rb="cd ~/dev/rbi"
