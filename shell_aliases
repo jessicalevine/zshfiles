@@ -25,13 +25,3 @@ function save() {
   pbpaste > $1
 }
 
-alias p1="cd ~/Dropbox/dev/cmsc430/p1"
-alias p2="cd ~/Dropbox/dev/cmsc430/p2"
-alias p3="cd ~/Dropbox/dev/cmsc430/p3"
-alias p4="cd ~/Dropbox/dev/cmsc430/p4"
-alias p5="cd ~/Dropbox/dev/cmsc430/p5"
-alias oc="rlwrap ocaml"
-alias rube="./Rubevm rubec.out"
-alias passcount="echo \"previous passcount:\";tail -n 1 passcount.txt;./runall.sh | grep PASSED | wc -l | tr -d \" \" | tee -a passcount.txt"
-alias trackfails="./runall.sh | grep FAILED | tr -d ' FAILED' | tee failures.txt"
-alias printfails="cd input; cat ../failures.txt | xargs tail +1; cd .."
