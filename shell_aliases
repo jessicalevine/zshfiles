@@ -16,7 +16,6 @@ alias sanitize="sed -e 's/\\ /\\\ /g'"
 alias openall="sanitize | xargs open"
 alias lim="head -n"
 alias gln="git ll | head -n"
-alias hours="vim ~/.tmp/hours"
 
 function save() {
   pbpaste
