@@ -26,3 +26,8 @@ function save() {
 }
 
 alias rb="cd ~/dev/rbi"
+
+alias tm="cd ~/gemapps/t"
+function te () {
+  ( tm ; t $1 )
+}
