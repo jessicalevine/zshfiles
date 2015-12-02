@@ -1,27 +1,40 @@
+# Git aliases
 alias gs="git status"
 alias gl="git ll | head -n 5"
+alias gln="git ll | head -n"
+
+# Rails & Webdev aliases
 alias railsgtester="cd ~/dev;rails new tester;cd tester;rvm gemset create tester;rvm gemset use tester"
 alias railsdtester="cd ~/dev;rm -R tester;rvm gemset delete tester"
+alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+
+# Unix aliases
 alias mv="mv -v"
 alias cp="cp -v"
 alias rm="rm -v"
+
+# Mac Application aliases
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome &"
-alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+
+# CLI Application aliases
+alias tm="cd ~/gemapps/t"
+function te () {
+  ( tm ; t $1 )
+}
+
+# Quick edit aliases
 alias vimrc="vim ~/.vimrc"
+
+# Work aliases
+alias rb="cd ~/dev/rbi"
+
+# Custom commands
 alias fgrep="find . | grep -i"
 alias sanitize="sed -e 's/\\ /\\\ /g'"
 alias openall="sanitize | xargs open"
 alias lim="head -n"
-alias gln="git ll | head -n"
 
 function save() {
   pbpaste
   pbpaste > $1
-}
-
-alias rb="cd ~/dev/rbi"
-
-alias tm="cd ~/gemapps/t"
-function te () {
-  ( tm ; t $1 )
 }
