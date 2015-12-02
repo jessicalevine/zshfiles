@@ -1,7 +1,5 @@
 alias gs="git status"
 alias gl="git ll | head -n 5"
-alias migrate="rake db:migrate && vim db/schema.rb"
-alias brake="bundle exec rake"
 alias railsgtester="cd ~/dev;rails new tester;cd tester;rvm gemset create tester;rvm gemset use tester"
 alias railsdtester="cd ~/dev;rm -R tester;rvm gemset delete tester"
 alias mv="mv -v"
