@@ -55,10 +55,11 @@ export PYTHONPATH=$(brew --prefix)/lib/python2.7/site-packages
 
 source ~/.brewsterrc
 
-PATH=$PATH:$HOME/.rvm/bin:$HOME/.redis/src
 # END OF BASH IMPORT
 
 # Customize to your needs...
-export PATH=$PATH:/Users/jordan/.rvm/gems/ruby-1.9.3-p429/bin:/Users/jordan/.rvm/gems/ruby-1.9.3-p429@global/bin:/Users/jordan/.rvm/rubies/ruby-1.9.3-p429/bin:/Users/jordan/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/X11/bin:/Users/jordan/.redis/src
+export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/X11/bin
 export PATH=/usr/local/sbin:/usr/local/bin:$PATH
 unsetopt correct
+
+PATH=$HOME/.rvm/bin:$HOME/.redis/src:$PATH
