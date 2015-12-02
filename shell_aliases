@@ -38,3 +38,6 @@ function save() {
   pbpaste
   pbpaste > $1
 }
+
+# Load private configuration
+source ~/.private-config
