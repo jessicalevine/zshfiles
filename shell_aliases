@@ -18,9 +18,18 @@ alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome &"
 
 # CLI Application aliases
 # t gem
+typeset -A twitter_profiles # populated in private config file
+
 alias tm="cd ~/gemapps/t"
 function te () {
   ( tm ; t $1 )
+}
+
+function tl () {
+  # $1 - name of friend based on hashtable above
+  # $2 - number of tweets, defaulting to 10
+  # return - tweets from that person's timeline
+  ( tm; t timeline $twitter_profiles[$1] -n ${2:=10} )
 }
 
 # Quick edit aliases
