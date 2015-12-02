@@ -62,4 +62,7 @@ export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/X11/bin
 export PATH=/usr/local/sbin:/usr/local/bin:$PATH
 unsetopt correct
 
+# OPAM configuration
+. ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
 PATH=$HOME/.rvm/bin:$HOME/.redis/src:$PATH
