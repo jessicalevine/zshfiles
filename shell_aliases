@@ -33,9 +33,10 @@ function te () {
 
 function tl () {
   # $1 - name of friend based on hashtable above
-  # $2 - number of tweets, defaulting to 10
+  # $2 - (optional) number of tweets, defaulting to 10
+  # $3 - (optional) cli flags, defaulting to none
   # return - tweets from that person's timeline
-  ( tm; t timeline $twitter_profiles[$1] -n ${2:=10} )
+  ( tm; t timeline $3 $twitter_profiles[$1] -n ${2:=10} )
 }
 
 # Quick edit aliases
