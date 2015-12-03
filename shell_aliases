@@ -39,6 +39,10 @@ alias vimrc="vim ~/.vimrc"
 alias rb="cd ~/dev/rbi"
 
 # Custom commands
+alias silent="sed -i.bak -e '$ d' ~/.zsh_history"
+alias s="silent"
+alias erase="silent ; silent"
+
 alias fgrep="find . | grep -i"
 alias sanitize="sed -e 's/\\ /\\\ /g'"
 alias openall="sanitize | xargs open"
