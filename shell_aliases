@@ -21,7 +21,13 @@ alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome &"
 typeset -A twitter_profiles # populated in private config file
 
 alias tm="cd ~/gemapps/t"
+alias st="s; t" # silent t - use t without writing to history
+alias tc="tm; t" # t change - switch to t app directory and execute t cmd
+
 function te () {
+  # t execute
+  # switch to t app directory in subshell and execute t cmd
+  # unlike tc, maintains the directory of the original shell
   ( tm ; t $1 )
 }
 
