@@ -2,6 +2,7 @@
 alias gs="git status"
 alias gl="git ll | head -n 5"
 alias gln="git ll | head -n"
+alias gaa="git add -A"
 
 # Rails & Webdev aliases
 alias railsgtester="cd ~/dev;rails new tester;cd tester;rvm gemset create tester;rvm gemset use tester"
