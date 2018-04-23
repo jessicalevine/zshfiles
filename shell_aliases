@@ -4,6 +4,11 @@ alias gl="git ll | head -n 5"
 alias gln="git ll | head -n"
 alias gaa="git add -A"
 
+# JS aliases
+alias precom="npm run eslint; npm test"
+alias servup="git add -A; git stash; git up; git stash pop; npm install"
+alias webup="git add -A; git stash; git up; git stash pop; npm install; npm start"
+
 # Rails & Webdev aliases
 alias railsgtester="cd ~/dev;rails new tester;cd tester;rvm gemset create tester;rvm gemset use tester"
 alias railsdtester="cd ~/dev;rm -R tester;rvm gemset delete tester"
