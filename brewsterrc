@@ -1,4 +1,0 @@
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
-ulimit -n 4096
-alias br="cd ~/dev/brewster/brewster"
-alias ml="cd ~/dev/brewster/megalookup"
