@@ -46,4 +46,4 @@ export PNPM_HOME="/Users/jessica/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 
-source .zshrc_agnostic
+source ~/.zshrc_agnostic
