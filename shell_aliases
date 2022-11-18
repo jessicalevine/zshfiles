@@ -18,6 +18,7 @@ alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/serv
 alias mv="mv -v"
 alias cp="cp -v"
 alias rm="rm -v"
+alias ls="ls -h"
 
 # Mac Application aliases
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome &"
@@ -48,9 +49,6 @@ function tl () {
 # Quick edit aliases
 alias vimrc="vim ~/.vimrc"
 
-# Work aliases
-alias rb="cd ~/dev/rbi"
-
 # Custom commands
 alias silent="sed -i.bak -e '$ d' ~/.zsh_history"
 alias s="silent"
@@ -66,5 +64,7 @@ function save() {
   pbpaste > $1
 }
 
+alias launch="ssh -i ~/.ssh/digitalocean jess@161.35.124.193"
+
 # Load private configuration
-source ~/.private-config
+# source ~/.private-config
